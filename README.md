@@ -11,16 +11,16 @@
 
 1. 根目錄創建 docs, dist 資料夾
 
-   :::info
+   ```
    * dist：打包成 npm 所輸出的 js 檔
    * docs：打包給 github 展示 demo page
-   :::
+   ```
     
 
 2. components 資料夾內創建 index.js
-    :::info
+    ```
      components 裡的 index.js 檔很重要，這裡是打包成 npm 的入口檔案，而 App.vue 和 main.js 都是 demo page 的元件
-     :::
+     ```
      
 3. 新增 vue.config.js
      
@@ -64,9 +64,9 @@
 
     export default Test
     ```
-    :::info
+    ```
     在 components 的 index.js 檔撰寫一個 install 方法供 Vue.use() 使用， Vue.use() 是個全局呼叫的方法，當 Vue.use() 執行時，會呼叫 install 這個 function 並執行，就是添加 Test 這個 component。
-    :::
+    ```
     
     #### 若是多個 component 呢？
     
@@ -101,7 +101,7 @@
     "main": "dist/vue-npm-test-10.common.js",
         // 主要的檔案入口
     ```
-    :::info
+    
     ```
     // 設定腳本執行
     
@@ -117,25 +117,24 @@
         "public/*"
     ],
     ```
-    :::
+    
 
 7. 打包 yarn build
 
-    :::info
+    ```
     每次的檔案變動及更新都要 build 一次 更新dist資料夾裡的檔案
     並且更新 version
-    :::
+    ```
     
 8. npm login 輸入帳號密碼email
     ###### npm whoami // 確認身份
 
 9. npm publish
 
-    :::info
+    ```
     推送至npm資料庫
     目前踩了兩個坑
     1. 確認 npm 帳號的信箱是否驗證過
     2. 專案名是否已被使用
-    :::
-
+    ```
     
