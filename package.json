@@ -1,6 +1,6 @@
 {
     "name": "vue-npm-test-10",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "main": "dist/vue-npm-test-10.common.js",
 
     "scripts": {
